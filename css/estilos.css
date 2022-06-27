@@ -1,0 +1,499 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   background-image: url(../img/fondoo.jpg) ; 
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 100%;
+   height: 100%;
+   color: #fff;
+}
+
+header{
+    width: 100%;
+    height: 600px;
+    background: url(../img/zona.jpg) center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+
+.nav{
+    background: #eb6c12;
+    height: 80px;
+    color: #fff;
+    font-size: 30px;
+}
+
+.nav_container{
+    display: flex;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav_menu{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 3em;
+}
+
+.nav_item{
+    color: #fff;
+    text-decoration: none;
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+
+.nav_item::after{
+    content:"" ;
+    display: block;
+    background: #fff;
+    width: 90%;
+    margin-top: 3px;
+    height: 3px;
+    clip-path: var(--clippy) ;
+    transition: clip-path.5s;
+}
+
+.nav_item:hover{
+    --clippy:polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+
+}
+.nav_input:checked + .nav_menu{
+    background: tomato;
+}
+
+.nav_label, .nav_input{
+   display: none;
+}
+
+.titulo {
+    font-size: 40px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 40px;
+    color: rgb(10, 10, 10);
+}
+
+.sabor { 
+    color: #fff;
+    margin: 7px 0;
+    font-size: 50px;
+    font-weight: 600;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.7);
+    font-family: 'Dancing Script', cursive;
+    margin-top: 0;
+}
+
+
+/*estilos materilize*/
+
+.center-align{
+    color: #fff;
+    text-align: center;
+}
+.carousel{
+    min-height: 600px;
+}
+.subtitulo{
+    background:rgba(0,0,0,.6);
+    margin: 0;
+    display: inline;
+    font-size: 60px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    bottom:10px;
+    color: #fff;
+    width: 761px;
+    line-height: 100%;
+}
+
+.row{
+    margin: 0;
+}
+
+.carousel .carousel-item{
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: center;
+    user-select: none;
+    height: 400px;
+    
+}
+
+.carousel .carousel-item a img{
+    height: 100%;
+    object-fit: cover;
+    position:relative;
+    top:0;
+    left: 0;
+    z-index: -1;
+    border: 15px;
+}
+
+.carousel .indicators .indicator-item{
+    border-radius: 0;
+    transform:rotate(45deg);
+    margin: 0 15%;
+    background: #fff;
+}
+
+.container{
+    width: 50%;
+}
+
+/*imagenes*/
+  
+.imagenes {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px;
+}
+.imagenes p{
+    width: 40%;
+    font-size: 25px;
+    text-align: center;
+}
+.imagenes img{
+    width: 800px;
+    height: 800px;
+    border-radius: 20px
+    
+}
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 2400px;
+}
+.contenedor h3{
+    text-align: center;
+}
+
+/*ricon*/
+.imagenesricon {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px;
+}
+.imagenesricon img{
+    width: 800px;
+    height: 800px;
+    border-radius: 20px;
+    filter: grayscale(0.5);
+    
+}
+
+.imagenesricon img:hover{
+    filter: grayscale(0);
+    transform: scale(110%);
+}
+
+.imagenesricon p{
+    width: 40%;
+    font-size: 25px;
+    text-align: center;
+}
+
+/*sin capa*/
+section{
+    margin-top: 70px;
+    
+    
+}
+
+.diferentes{
+    display:flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    align-items: center;
+    font-size: 30px;
+}
+
+.textoLateral{
+    width: 80%;
+    margin: 0 20px;
+}
+
+.unifo{
+    width: 50%;
+}
+
+.unifo img{
+    border-radius: 20px;
+    width: 100%;
+}
+/*manodedios*/
+.ejercicio{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.ejercicio img{
+  width: 25%;
+  height: 25%;
+  border-radius: 20px;
+  display: flex;
+  padding: 50px 0px;
+}
+
+.informacion{
+   text-align: left;
+   font-size: 30px;
+}
+.video{
+    text-align: center;
+}
+/*desocupe*/
+.boleta img{
+    width: 180%;
+    height: 180%;
+    border-radius: 20px;
+}
+
+.formulario .form .form-header .form-title  {
+    font-weight: normal;
+    font-family: sans-serif;
+    color: rgb(255, 153, 0);
+    text-align: center;
+    padding:14px 0 ;
+}
+
+.formulario .form .form-header .form-title span{
+    color: #000;
+}
+.formulario .form {
+    background: rgba(0,0,0,.6);
+    width: 90%;
+    max-width:650px ;
+    margin: auto;
+    padding: 5px 34px;
+    margin-top:30px ;
+    padding-bottom: 30px;
+    border-radius: 3px;
+}
+
+.formulario .form .form-label {
+    display: block;
+    color: rgb(255, 153, 0);
+    font-size: 16px;
+    font-family: roboto;
+    position: relative;
+}
+.formulario .form .form-input, .form-textarea {
+    background: rgba(0,0,0,.7);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(255, 153, 0);
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #fff;
+    font-family: roboto;
+}
+.contenedor .form .form-textarea {
+    resize: vertical ;
+    max-height: 150px;
+    min-height: 50px;
+}
+.formulario .form .btn-submit {
+    width: 100%;
+    font-size: roboton;
+    outline: none;
+    background: rgb(255, 153, 0) ;
+    font-size: 16px;
+    border: none;
+    color: #fff;
+    padding: 15px 0;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.formulario .form .btn-submit:hover{
+    background: #f0ab51;
+}
+
+/*cueva*/
+h5{
+    text-align: center;
+   
+}
+h4{
+    text-align: center;
+    padding: 30px;
+}
+/*BIBLIOTECA*/
+
+.ppal{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 2400px;
+}
+.ppal h3{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+footer{
+    background-color: rgb(12, 12, 11);
+    padding: 100px;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+}
+
+.img-top{
+    text-align: center;
+}
+
+.ppal .imagenes{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+
+@media screen and (max-width:1370px){
+    body{
+        width: 100%;
+    }
+
+    header{ 
+        height: 300px;
+    }
+
+    section{
+        padding: 20px;
+    }
+
+    h4{
+        font-size: 2em;
+        padding: 0 20px 20px;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+
+    footer{
+        padding: 20px;
+        font-size: 15px;
+    }
+
+    h3{
+        font-size: 30px;
+    }
+
+    .todo{
+        width: 100%;
+    }
+
+    .nav{
+        font-size: 24px;
+    }
+
+    .nav_menu{
+        gap:20px;
+    }
+
+    .container {
+        width: 65%;
+    }
+
+    .contenedor{
+        justify-content: center;
+    }
+
+    .ppal{
+        justify-content: space-between;
+    }
+
+    .ppal .imagenes img{
+        width: 600px;
+        height: 600px;
+    }
+    
+    .ppal .imagenes p{
+        width: 550px;
+        text-align: justify;
+    }
+
+    .carousel {
+        min-height: 500px;
+    }
+
+    .diferentes{
+        font-size: 20px;
+    }
+
+    .textoLateral{
+        width: 70%;
+    }
+
+    .textoLateral p{
+        text-align: justify;
+    }
+
+    .informacion{
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    .imagenesricon img{
+        width: 90%;
+        height: auto;
+    }
+
+    .imagenesricon p{
+        width: 90%;
+        font-size: 20px;
+    }
+
+    
+
+}
+
+/* 
+@media (max-width:700px){
+    .nav_label{
+        display: block;
+        cursor: pointer;
+    }
+    .nav_menu{
+        position: fixed;
+        top: 80px;
+        bottom: 0;
+        background: #000;
+        width: 100%;
+        left: 0;
+        display:flex ;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: clip-path 1s ease-in-out;
+    }
+
+    .nav_input:checked + .nav_menu{
+        clip-path: circle(100% at center);
+    }
+} */
