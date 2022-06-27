@@ -503,6 +503,13 @@ footer{
     .sidenav-trigger{
         visibility: visible;
     }
+
+    .material-icons{
+        color: #fff;
+        font-size: 36px;
+    }
+
+
 }
 
 @media (max-width:500px){
