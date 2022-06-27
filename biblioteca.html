@@ -9,6 +9,9 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Raleway:500,600&display=swap" rel="stylesheet">
 
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <!--materilize.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     
@@ -17,10 +20,23 @@
 </head>
 <body>
     <header>
-        
+         <!-- Menu Responsivo -->
+         <a href="#" data-target="menu-responsive" class="sidenav-trigger">
+            <i class="material-icons">menu</i>
+        </a>
+        <div class="sidenav" id="menu-responsive">
+            <a href="index.html" class="nav_item">Inicio</a>
+            <a href="sincapa.html" class="nav_item">Sin Capa</a>
+            <a href="manodedios.html" class="nav_item">Mano De Dios</a>
+            <a href="desocupe.html" class="nav_item">Desocupe</a>
+            <a href="riconsena.html" class="nav_item">El Ricon Del Sena</a>
+            <a href="cuevadelvirgen.html" class="nav_item">Cueva Del Virgen</a>
+            <a href="biblioteca.html" class="nav_item">Biblioteca</a>
+        </div>
+        <!-- --------------------------------------------------------------------------- -->
     </header>
 
-    <nav class="nav">
+    <nav class="nav hide-on-med-and-down">
 
         <div class="nav_container">
 
@@ -40,7 +56,7 @@
             </div>
         </div>
     </nav>
-    <div class="container">
+    <div class="container hide-on-med-and-down">
         <div class="row">
             <div class="col s12">
                 <div class="carousel center-align">
@@ -90,6 +106,10 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="img-section">
+        <h2 class="subtitulo">BIBLIOTECA</h2>
+        <img src="img/biblioteca2.png" alt="">
     </div>
     <h2>BIBLIOTECA DEL SENA GALAN</h2>
 <section class="ppal">
@@ -169,6 +189,12 @@
     <!--Materialize.js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            M.AutoInit();
+        });
+    </script>
+
     <!-- JS Main -->
     <script src="js/main.js"></script>
 </body>

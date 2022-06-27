@@ -10,27 +10,43 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Raleway:500,600&display=swap" rel="stylesheet">
 
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <!--materilize.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    
+
+ 
     <!-- CSS Estilos -->
     <link rel="stylesheet" href="css/estilos.css">
+   
 </head>
 <body>
 <div class="todo">
     <header>
-        
+        <!-- Menu Responsivo -->
+        <a href="#" data-target="menu-responsive" class="sidenav-trigger">
+            <i class="material-icons">menu</i>
+        </a>
+        <div class="sidenav" id="menu-responsive">
+            <a href="index.html" class="nav_item">Inicio</a>
+            <a href="sincapa.html" class="nav_item">Sin Capa</a>
+            <a href="manodedios.html" class="nav_item">Mano De Dios</a>
+            <a href="desocupe.html" class="nav_item">Desocupe</a>
+            <a href="riconsena.html" class="nav_item">El Ricon Del Sena</a>
+            <a href="cuevadelvirgen.html" class="nav_item">Cueva Del Virgen</a>
+            <a href="biblioteca.html" class="nav_item">Biblioteca</a>
+        </div>
+        <!-- --------------------------------------------------------------------------- -->
     </header>
 
-    <nav class="nav">
 
+    <nav class="nav hide-on-med-and-down">
         <div class="nav_container">
-
             <label for="menu" class="nav_label">
                 <img src="assets/menu.svg" alt="" class="nav_img">
             </label>
             <input type="checkbox" id="menu" class="nav_input">
-
             <div class="nav_menu">
                 <a href="index.html" class="nav_item">Inicio</a>
                 <a href="sincapa.html" class="nav_item">Sin Capa</a>
@@ -41,10 +57,9 @@
                 <a href="biblioteca.html" class="nav_item">Biblioteca</a>
             </div>
         </div>
-
     </nav>
 
-    <div class="container">
+    <div class="container hide-on-med-and-down">
         <div class="row">
             <div class="col s12">
                 <div class="carousel center-align">
@@ -94,6 +109,10 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="img-section">
+        <h2 class="subtitulo">inicio</h2>
+        <img src="img/inicio.png" alt="">
     </div>
 <section class="ppal">
     <div class="imagenes">
@@ -148,6 +167,12 @@
     <!--Materialize.js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            M.AutoInit();
+        });
+    </script>
+
     <!-- JS Main -->
     <script src="js/main.js"></script>
 </body>

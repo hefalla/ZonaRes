@@ -74,6 +74,35 @@ header{
    display: none;
 }
 
+.sidenav{
+    background: #eb6c12;
+    width: 350px;
+}
+
+.sidenav-trigger{
+    visibility: hidden;
+}
+
+.img-section{
+    display: none;
+    text-align: center;
+    position: relative;
+}
+
+.img-section .subtitulo{
+    background:rgba(0,0,0,.6);
+    margin: 0;
+    display: inline;
+    font-size: 60px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    bottom:10px;
+    color: #fff;
+    width: 761px;
+    line-height: 100%;
+}
+
 .titulo {
     font-size: 40px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -468,32 +497,86 @@ footer{
         font-size: 20px;
     }
 
-    
-
 }
 
-/* 
-@media (max-width:700px){
-    .nav_label{
-        display: block;
-        cursor: pointer;
+@media (max-width:992px){
+    .sidenav-trigger{
+        visibility: visible;
     }
-    .nav_menu{
-        position: fixed;
-        top: 80px;
-        bottom: 0;
-        background: #000;
-        width: 100%;
-        left: 0;
-        display:flex ;
-        justify-content: space-evenly;
-        flex-direction: column;
-        align-items: center;
-        clip-path: circle(0 at center);
-        transition: clip-path 1s ease-in-out;
+}
+
+@media (max-width:500px){
+    header{
+        height: 40vh;
+        background-position:center;
     }
 
-    .nav_input:checked + .nav_menu{
-        clip-path: circle(100% at center);
+    .sidenav a{
+        line-height: 30px;
     }
-} */
+
+    .img-section{
+        display: block;
+        width: 100%;
+    }
+
+    .img-section img{
+        width: 100%;
+    }
+
+    .img-section .subtitulo{
+        width: 100%;
+        font-size: 35px;
+    }
+
+    .ppal{
+        display: block;
+        width: 100%;
+    }
+
+    .ppal .imagenes{
+        width: 100%;
+        padding: 0;
+    }
+
+    .ppal .imagenes img, .ppal .imagenes p{
+        width: 100%;
+        height: auto;
+    }
+
+    .imagenes{
+        padding: 0;
+    }
+
+    .diferentes{
+        flex-wrap: wrap;
+    }
+
+    .textoLateral{
+        width: 90%;
+    }
+
+    .unifo{
+        margin-top: 20px;
+        width: 80%;
+    }
+
+    .ejercicio{
+        flex-wrap: wrap;
+    }
+
+    .ejercicio img{
+        width: 80%;
+        height: auto;
+    }
+
+    .informacion{
+        width: 100%;
+    }
+
+    .imagenesricon{
+        padding: 0;
+        width: 90%;
+    }
+
+}
